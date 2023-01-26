@@ -1,4 +1,4 @@
-title:              Adarsh's blog
+title:              AdarshDevDigest
 email:              adarshprasad82@gmail.com
 description:        Technology simplified, explained, and explored.
 author:             Adarsh
@@ -9,7 +9,7 @@ url:                "https://adarssh01.github.io"
 
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics:   G-40GXKBKG8Q # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
