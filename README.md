@@ -8,7 +8,7 @@ Modern blog theme is designed for use with Jekyll. Jekyll is a powerful static s
 
 
 
-**[View Live Preview](https://adarssh01.github.io/adarsh.github.io/)**
+**[View Live Preview](https://adarshdevdigest.me/)**
 
 ## Installation & Setup
 
