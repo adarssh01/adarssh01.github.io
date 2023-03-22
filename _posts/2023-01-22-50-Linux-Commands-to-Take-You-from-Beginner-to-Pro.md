@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Master the Linux Command Line: A Comprehensive Cheatsheet for Basic Linux Commands"
+title: "50 Linux Commands to Take You from Beginner to Pro"
 
 # date: 2020-01-26 23:45:13 -0400
 background: '/img/posts/linux.jpg'
