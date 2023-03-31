@@ -9,7 +9,7 @@ url:                "https://adarshdevdigest.me"
 
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   G-40GXKBKG8Q # out your google-analytics code
+google_analytics:   ${{ secrets.GA_TRACKING_ID }} # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
