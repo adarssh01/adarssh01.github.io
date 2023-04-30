@@ -4,21 +4,18 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" id="post-bg-height" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<header
+  class="masthead"
+  id="post-bg-height"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')"
+>
   {% else %}
   <header class="masthead">
     {% endif %}
     <div class="overlay"></div>
     <div class="container">
-
-
-      
-
-
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          
-        </div>
+        <div class="col-lg-8 col-md-10 mx-auto"></div>
       </div>
     </div>
   </header>
@@ -26,36 +23,66 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-
         <div class="post-heading">
           <h1 style="margin-bottom: 25px;">{{ page.title }}</h1>
           {% if page.subtitle %}
           <!-- <h2 class="subheading">{{ page.subtitle }}</h2> -->
           {% endif %}
-          <span class="meta">{{ page.date | date: '%B %d, %Y' }} • {% include read_time.html
+          <span class="meta">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              style="
+    margin-bottom: 4px;
+"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="7.25"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+              <path
+                stroke="currentColor"
+                stroke-width="1.5"
+                d="M12 8V12L14 14"
+              ></path>
+            </svg>
+            {{ page.date | date: '%B %d, %Y' }} • {% include read_time.html
             content=page.content %}
           </span>
         </div>
-        <hr>
-
+        <hr />
 
         {{ content }}
 
-        <hr>
+        <hr />
 
         <div class="clearfix">
-
           {% if page.previous.url %}
-          <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
-              Post</span></a>
+          <a
+            class="btn btn-primary float-left"
+            href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="{{ page.previous.title }}"
+            >&larr; Previous<span class="d-none d-md-inline"> Post</span></a
+          >
+          {% endif %} {% if page.next.url %}
+          <a
+            class="btn btn-primary float-right"
+            href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="{{ page.next.title }}"
+            >Next<span class="d-none d-md-inline"> Post</span> &rarr;</a
+          >
           {% endif %}
-          {% if page.next.url %}
-          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
-              Post</span> &rarr;</a>
-          {% endif %}
-
         </div>
-
       </div>
     </div>
   </div>
+</header>
